@@ -119,22 +119,10 @@ Update your information in the respective component files:
 
 The site can be deployed to various platforms:
 
-### Vercel
-```bash
-npm install -g vercel
-vercel
-```
-
 ### Netlify
 ```bash
 npm run build
 # Upload the 'dist' folder to Netlify
-```
-
-### GitHub Pages
-```bash
-npm run build
-# Deploy the 'dist' folder to gh-pages branch
 ```
 
 ## Browser Support
