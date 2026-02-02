@@ -1,0 +1,235 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 8rem 0 4rem;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.15;
+  animation: float 20s ease-in-out infinite;
+}
+
+.orb-1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--color-accent), transparent);
+  top: -200px;
+  right: -100px;
+  animation-delay: 0s;
+}
+
+.orb-2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--color-accent-dim), transparent);
+  bottom: -150px;
+  left: -50px;
+  animation-delay: -10s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(50px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-30px, 30px) scale(0.9);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+.hero-greeting {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+}
+
+.hero-name {
+  font-size: 5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--color-text-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-title {
+  font-size: 2rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.hero-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-tertiary);
+  font-size: 0.95rem;
+  margin-bottom: 3rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 1rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all var(--transition-medium);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: var(--color-bg-primary);
+  border: 1px solid var(--color-accent);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border-light);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.hero-social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero-social a {
+  color: var(--color-text-tertiary);
+  font-size: 1.5rem;
+  transition: all var(--transition-medium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-social a:hover {
+  color: var(--color-accent);
+  transform: translateY(-3px);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--color-accent), transparent);
+  animation: scroll 2s ease-in-out infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 6rem 0 4rem;
+  }
+
+  .hero-name {
+    font-size: 3rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .orb-1,
+  .orb-2 {
+    width: 300px;
+    height: 300px;
+  }
+}
