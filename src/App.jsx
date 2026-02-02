@@ -5,7 +5,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Education from './components/Education';
-import Contact from './components/Contact';
+import Contact from './components/Contact-NetlifyForms';
 import Footer from './components/Footer';
 import './App.css';
 
