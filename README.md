@@ -136,12 +136,6 @@ npm run build
 
 This project is open source and available for personal use.
 
-## Contact
-
-- **Email**: ygirisree@gmail.com
-- **Phone**: 267-376-1203
-- **Location**: Sterling, Virginia
-
 ---
 
 Built with ❤️ using React and Vite
