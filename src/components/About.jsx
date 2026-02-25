@@ -5,11 +5,11 @@ import './About.css';
 const About = () => {
   const highlights = [
     {
-      number: '5+',
+      number: '6',
       label: 'Years Experience',
     },
     {
-      number: '3',
+      number: '4',
       label: 'Companies',
     },
   ];
@@ -37,23 +37,25 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p>
-              I'm a React Developer with a passion for creating intuitive,
-              accessible, and performant web applications. With over 5 years of
-              experience in the field, I've had the privilege of working with
-              companies ranging from healthcare technology to enterprise consulting.
+              I'm a React Developer with 6 years of experience building scalable,
+              high-performance web applications and real-time systems. I’ve worked across
+              healthcare technology and enterprise consulting, delivering production-ready
+              dashboards and internal platforms that support complex business workflows.
             </p>
+
             <p>
-              My expertise lies in translating complex requirements into elegant
-              solutions using React, TypeScript, and modern frontend technologies.
-              I believe in writing clean, maintainable code and creating
-              exceptional user experiences that make a difference.
+              My expertise lies in architecting modern frontend solutions using React,
+              TypeScript, and microfrontend patterns. I specialize in building responsive,
+              accessible interfaces, integrating REST APIs and WebSockets for real-time
+              functionality, and optimizing performance through clean architecture and
+              efficient state management.
             </p>
+
             <p>
-              Currently based in Sterling, Virginia, I'm always excited to
-              collaborate on projects that push boundaries and solve real-world
-              problems. When I'm not coding, you'll find me exploring new
-              technologies, contributing to open-source, or mentoring aspiring
-              developers.
+              Currently based in Sterling, Virginia, I enjoy collaborating in Agile teams
+              to translate complex requirements into elegant, maintainable solutions. I’m
+              passionate about crafting intuitive user experiences that balance aesthetics,
+              scalability, and long-term reliability.
             </p>
           </motion.div>
 
