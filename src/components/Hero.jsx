@@ -55,10 +55,7 @@ const Hero = () => {
         </motion.p>
 
         <motion.p className="hero-description" variants={itemVariants}>
-          Crafting scalable, performant, and elegant web experiences with 5 years
-          of expertise in React, TypeScript, and modern frontend technologies.
-          Specialized in building responsive applications that balance aesthetics
-          with functionality.
+        Crafting scalable, high-performance web applications with 6 years of experience in React and TypeScript. Specialized in building real-time dashboards, cross-platform solutions, and microfrontend architectures using modern frontend technologies. Experienced in designing reusable component systems, implementing accessible UI patterns, and optimizing performance through code splitting and efficient state management. Strong background in REST APIs, WebSockets, and Azure-based deployments with CI/CD pipelines. Passionate about delivering clean, maintainable solutions that balance user experience with technical excellence.
         </motion.p>
 
         <motion.div className="hero-location" variants={itemVariants}>
