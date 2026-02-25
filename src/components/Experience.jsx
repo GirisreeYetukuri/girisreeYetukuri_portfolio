@@ -10,13 +10,13 @@ const Experience = () => {
       location: 'Hoboken, New Jersey (Remote)',
       period: 'November 2023 – Present',
       description:
-        'Developed a real-time logistics operations dashboard for remote patient monitoring, managing medical device kits across healthcare facilities.',
+        'Developing a cross-platform logistics platform for remote patient monitoring, managing medical device kits across healthcare facilities.',
       achievements: [
-        'Built real-time dashboard with React, Redux Toolkit, and WebSockets for live shipment and inventory tracking',
-        'Implemented interactive data visualizations using Apache ECharts and React Table with advanced filtering',
-        'Optimized rendering performance with React.memo and virtualization, improving responsiveness by 40%',
-        'Utilized React Query for client-side caching, reducing redundant API calls',
-        'Deployed on Azure Static Web Apps with CI/CD via GitHub Actions',
+        'Built real-time web dashboard and internal mobile app using React and React Native with shared Redux Toolkit state',
+        'Integrated REST APIs and WebSockets for live shipment tracking and real-time alerts',
+        'Developed accessible UI components using Material UI and Tailwind CSS following ARIA standards',
+        'Optimized performance with React.memo, lazy loading, and React Query, improving responsiveness by 40%',
+        'Contributed to microfrontend architecture using Module Federation and Nx; deployed via Azure with CI/CD pipelines',
       ],
     },
     {
@@ -25,13 +25,13 @@ const Experience = () => {
       location: 'Bengaluru, India',
       period: 'August 2022 – August 2023',
       description:
-        'Developed a talent allocation platform to optimize consultant assignments and resource utilization across client projects.',
+        'Developed a talent allocation platform to optimize consultant assignments and resource utilization across enterprise projects.',
       achievements: [
-        'Built React SPA with TypeScript for consultant profiles, assignments, and availability tracking',
-        'Implemented drag-and-drop interface with real-time conflict alerts to prevent double-booking',
-        'Created skill-matching search with debounced filtering by skills, certifications, and experience',
-        'Developed analytics dashboard with Recharts visualizing utilization rates and project timelines',
-        'Reduced initial load time by 30% through React.memo, lazy loading, and code-splitting',
+        'Built modular React SPA using TypeScript for consultant profiles and assignments',
+        'Implemented drag-and-drop scheduling with real-time conflict detection',
+        'Created advanced search with debounced filtering and GraphQL queries',
+        'Developed analytics dashboards using Recharts for utilization insights',
+        'Improved load performance by 30% using memoization and code-splitting',
       ],
     },
     {
@@ -40,13 +40,28 @@ const Experience = () => {
       location: 'Bengaluru, India',
       period: 'August 2021 – June 2022',
       description:
-        'Built an internal request management system for workflow tracking across client projects and internal operations.',
+        'Built an internal request management SPA to streamline workflow tracking and role-based operations.',
       achievements: [
-        'Developed multi-page React application with React Hooks, Context API, and React Router',
-        'Designed responsive UIs with HTML5, CSS3, and SCSS ensuring accessibility',
-        'Implemented role-based dashboards with dynamic forms and real-time validation',
-        'Integrated RESTful APIs with performance optimization through lazy loading',
-        'Deployed as custom SharePoint web application with Active Directory integration',
+        'Developed React application using Hooks, Context API, and React Router',
+        'Designed responsive, accessible interfaces using HTML5 and CSS3',
+        'Implemented dynamic forms with validation and role-based dashboards',
+        'Integrated RESTful APIs using Axios with lazy loading optimization',
+        'Deployed as a SharePoint-integrated web app with Active Directory authentication',
+      ],
+    },
+    {
+      title: 'Frontend Intern',
+      company: 'Terex Soft',
+      location: 'Bengaluru, India',
+      period: 'January 2021 – July 2021',
+      description:
+        'Assisted in developing frontend features for a client-facing Learning Management Platform.',
+      achievements: [
+        'Built course listing and detail pages using React and Axios for API integration',
+        'Developed quiz and assignment components with form validation',
+        'Implemented progress tracking UI with dynamic completion indicators',
+        'Applied lazy loading and code splitting to improve page performance',
+        'Collaborated in Agile team with Git-based workflows and code reviews',
       ],
     },
   ];

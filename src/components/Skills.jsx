@@ -6,11 +6,15 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Frontend Core',
-      skills: ['React', 'JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3', 'SCSS'],
+      skills: ['React', 'React Native', 'JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'],
     },
     {
       title: 'State Management & Data',
-      skills: ['Redux Toolkit', 'React Query', 'Context API'],
+      skills: ['Redux Toolkit', 'Redux Thunk', 'React Query', 'Context API'],
+    },
+    {
+      title: 'Architecture & Build Tools',
+      skills: ['Microfrontends (Module Federation)', 'Nx Monorepo', 'Webpack', 'Vite'],
     },
     {
       title: 'UI & Design Systems',
@@ -22,22 +26,26 @@ const Skills = () => {
     },
     {
       title: 'Backend & Databases',
-      skills: ['Node.js', 'Express.js', 'MySQL', 'PostgreSQL'],
+      skills: ['Node.js', 'Express.js', 'PostgreSQL', 'MySQL'],
     },
     {
       title: 'Testing & Quality',
       skills: ['Jest', 'React Testing Library', 'Cypress (E2E)'],
     },
     {
-      title: 'DevOps & Tools',
-      skills: ['Git', 'GitHub', 'GitHub Actions', 'Azure DevOps', 'Docker'],
+      title: 'DevOps & Cloud',
+      skills: [
+        'Git',
+        'GitHub Actions',
+        'Azure',
+        'Docker',
+      ],
     },
     {
-      title: 'Cloud Services',
-      skills: ['Azure Static Web Apps', 'Azure App Service', 'SharePoint'],
+      title: 'Data Visualization',
+      skills: ['Recharts', 'React Table'],
     },
   ];
-
   return (
     <section className="skills section" id="skills">
       <div className="container">
